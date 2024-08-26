@@ -59,3 +59,22 @@ function reColorParagraphs()
         currentParagraph.style.color = "yellow";
     }
 }
+
+//Getting text from an input box
+
+let signUpButton = document.getElementById("submit");
+let firstName = document.getElementById("fName");
+let fNameInfo = "";
+
+signUpButton.addEventListener("click", () =>
+{
+    if (firstName.value == false)
+    {
+        confirm(" Can't submit an empty value");
+    }
+    else
+    {
+        fNameInfo = firstName.value
+        console.log(fNameInfo);
+    }
+});
