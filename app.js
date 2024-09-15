@@ -78,3 +78,24 @@ signUpButton.addEventListener("click", () =>
         console.log(fNameInfo);
     }
 });
+
+//CREATING ELEMENTS and REMOVING
+
+//Creating Elements
+let paragraphFirstBox = document.createElement("p");
+paragraphFirstBox.innerHTML = "Hello World!";
+console.log(paragraphFirstBox);
+let divSecondBox = document.createElement("div");
+console.log(divSecondBox);
+
+//Sending these created elements to the INDEX.html page
+let divFirstBox = document.querySelector(".firstBox");
+console.log(divFirstBox);
+//APPEND
+divFirstBox.append(paragraphFirstBox);
+
+//Add and remove classes for styling purposes
+
+divSecondBox.classList.add("col-4");
+
+divFirstBox.classList.remove("firstBox");
